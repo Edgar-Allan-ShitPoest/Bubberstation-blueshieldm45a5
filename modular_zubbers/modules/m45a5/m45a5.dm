@@ -20,12 +20,12 @@
 
 /obj/item/ammo_box/magazine/m45a5
 	name = "ACA modular magazine"
-	desc = "A magazine able to chamber .460 Rowland Magnun. Made for the M45A5, as it's the only available sidearm with a smart multi-caliber mechanism."
+	desc = "A magazine able to chamber .460 Rowland Magnum. Made for the M45A5, as it's the only available sidearm with a smart multi-caliber mechanism."
 	icon = 'modular_skyrat/modules/blueshield/icons/M45A5.dmi'
 	icon_state = "rowlandmodular"
 	base_icon_state = "rowlandmodular"
 	ammo_type = /obj/item/ammo_casing/b460
-	max_ammo = 8 //Previously 15, then previously 10. Locked to 8, as you can now restock .460 Magnum which was unintended due to its strong nature.
+	max_ammo = 10 //Previously 15, then previously 10. Originally locked to 8 - Changed to 10 as having slightly more ammo differentiates it from an actual m1911. The HK MK23 in real life is also chambered in .45 and has a magazine capacity of 12 - but these bullets are pretty strong
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
 	multiple_sprite_use_base = TRUE
 
