@@ -20,14 +20,15 @@
 	icon = 'modular_skyrat/master_files/icons/obj/closet.dmi'
 	req_access = list(ACCESS_CAPTAIN)
 
-/obj/item/storage/box/gunset/nanotrasen_consultant
+/obj/item/storage/toolbox/guncase/skyrat/pistol/empty/m45a5
 	name = "M45A5 gunset"
+	icon_state = "guncase_s"
 	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/gun/ballistic/automatic/pistol/m45a5/nomag
 	spawnwithmagazine = FALSE
 
-/obj/item/storage/box/gunset/nanotrasen_consultant/PopulateContents()
+/obj/item/storage/toolbox/guncase/skyrat/pistol/empty/m45a5/PopulateContents()
 	. = ..()
 	new /obj/item/gun/ballistic/automatic/pistol/m45a5/nomag(src)
 	new /obj/item/ammo_box/magazine/m45a5(src)
@@ -47,4 +48,4 @@
 	new /obj/item/storage/toolbox/guncase/skyrat/xhihao_large_case/bogseo(src)
 	new /obj/item/storage/bag/garment/blueshield(src)
 	new /obj/item/mod/control/pre_equipped/blueshield(src)
-	new /obj/item/storage/box/gunset/nanotrasen_consultant(src)
+	new /obj/item/storage/toolbox/guncase/skyrat/pistol/empty/m45a5(src)
